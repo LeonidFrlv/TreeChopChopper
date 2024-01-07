@@ -1,0 +1,10 @@
+name: TreeChopChopper
+version: '${project.version}'
+main: org.s1queence.TreeChopChopper
+api-version: '1.18'
+commands:
+  treechopchopper:
+    usage: /tcc reload
+    permission: tcc.perms.reload
+    aliases:
+      - tcc

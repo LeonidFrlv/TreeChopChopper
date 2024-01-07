@@ -1,0 +1,25 @@
+# reload permission - tcc.perms.reload
+
+# %plugin% - название плагина
+# %hits_left% - количество ударов осталось, до того, как дерево упадёт.
+
+#plugin
+onEnable_msg: "%plugin% &aБыл включен!"
+onDisable_msg: "%plugin% &cБыл выключен!"
+onReload_msg: "%plugin% &aКонфиг был обновлён!"
+
+attack_coolDown_is_not_expired: "Бейте со всей силы"
+hits_left: "Осталось &c%hits_left% &fудара(-ов)"
+default_destroy_block_of_tree_stem: "Вы как-то странно рубите деревья"
+
+# Вкл/Выкл эффект "взмаха меча" при ударе по дереву топором
+sweep_attack_particle: true
+
+# Звук удара по дереву.
+chop_sound: custom.tree_chop
+
+# Шанс "плавного" падения листвы, после срубания дерева.
+leaves_fall_chance: 60
+
+# Вкл/Выкл находясь в режиме скрытности игрок может ломать деревья старым по-старому
+sneak_destroy_bypass: false
