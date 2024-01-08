@@ -35,7 +35,6 @@ public final class TreeChopChopper extends JavaPlugin implements CommandExecutor
     @Override
     public void onDisable() {
         consoleLog(getConvertedTextFromConfig(config, "onDisable_msg", this.getName()), this);
-
     }
 
     @Override
