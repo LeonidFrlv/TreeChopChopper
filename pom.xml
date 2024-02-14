@@ -6,7 +6,7 @@
 
     <groupId>org.s1queence</groupId>
     <artifactId>TreeChopChopper</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>TreeChopChopper</name>
@@ -75,7 +75,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
-                    <outputDirectory>C:\Users\Denis\Desktop\TestServer\plugins\</outputDirectory>
+                    <!-- your outputDirectory -->
                 </configuration>
             </plugin>
         </plugins>

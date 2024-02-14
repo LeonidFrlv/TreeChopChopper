@@ -17,9 +17,8 @@ import org.s1queence.plugin.libs.YamlDocument;
 
 import java.util.HashMap;
 
-import static org.s1queence.S1queenceLib.getLib;
-import static org.s1queence.api.S1Booleans.isAllowableInteraction;
 import static org.s1queence.api.S1Booleans.isLuck;
+import static org.s1queence.api.S1Booleans.isNotAllowableInteraction;
 import static org.s1queence.api.S1TextUtils.getConvertedTextFromConfig;
 import static org.s1queence.api.S1Utils.sendActionBarMsg;
 import static org.s1queence.api.S1Utils.toCenterLocation;
@@ -114,9 +113,7 @@ public class ChopListener implements Listener {
         YamlDocument config = plugin.getPluginConfig();
         String pluginName = plugin.getName();
 
-        String errorText = isAllowableInteraction(player, blockLocation, getLib());
-        if (errorText != null) {
-            sendActionBarMsg(player, errorText);
+        if (isNotAllowableInteraction(player, blockLocation)) {
             e.setCancelled(true);
             return;
         }
