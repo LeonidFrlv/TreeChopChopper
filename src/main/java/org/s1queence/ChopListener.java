@@ -130,7 +130,7 @@ public class ChopListener implements Listener {
         if (!treeChopProgress.containsKey(block)) treeChopProgress.put(block, treeHeight);
         int treeHits = treeChopProgress.get(block) - 1;
         if (config.getBoolean("sweep_attack_particle")) world.spawnParticle(Particle.SWEEP_ATTACK, toCenterLocation(blockLocation), 1);
-        world.playSound(blockLocation, config.getString("chop_sound"), 5.0f, 1.0f);
+        world.playSound(blockLocation, config.getString("chop_sound"), 1.0f, 1.0f);
         treeChopProgress.put(block, treeHits);
 
         if (treeHits != 0) {
