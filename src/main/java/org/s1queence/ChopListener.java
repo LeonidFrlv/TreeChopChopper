@@ -169,7 +169,8 @@ public class ChopListener implements Listener {
         if (mainItem.getType().getMaxDurability() - damage <= 0) {
             player.getInventory().remove(mainItem);
             world.playSound(player.getLocation(), Sound.ENTITY_ITEM_BREAK, 5.0f, 1.0f);
-            world.spawnParticle(Particle.ITEM_CRACK, player.getLocation(), 10, 0.3, 0.5, 0.3, 0, mainItem);
+            world.spawnParticle(Particle.ITEM, player.getLocation(), 10, 0.3, 0.5, 0.3, 0, mainItem);
+
             return;
         }
         dIM.setDamage(damage);

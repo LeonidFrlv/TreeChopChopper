@@ -31,7 +31,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.18.2-R0.1-SNAPSHOT</version>
+            <version>1.21.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -39,7 +39,7 @@
             <artifactId>s1queencelib</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>C:/Users/Denis/Desktop/TestServer/plugins/S1queenceLib-1.0.jar</systemPath>
+            <systemPath>C:/Users/Denis/Desktop/121PaperTestServer/plugins/S1queenceLib-1.0-1.21.1.jar</systemPath>
         </dependency>
     </dependencies>
 
@@ -75,6 +75,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
+                    <outputDirectory>C:/Users/Denis/Desktop/121PaperTestServer/plugins/</outputDirectory>
                     <!-- your outputDirectory -->
                 </configuration>
             </plugin>
