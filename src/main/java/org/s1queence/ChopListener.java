@@ -105,7 +105,7 @@ public class ChopListener implements Listener {
         Material blockType = block.getType();
         if (!isLog(block)) return;
         ItemStack mainItem = player.getInventory().getItemInMainHand();
-        boolean isAxe = mainItem.getType().toString().contains("AXE");
+        boolean isAxe = mainItem.getType().toString().contains("_AXE");
         if (!isAxe) return;
         Location blockLocation = block.getLocation();
         World world = block.getWorld();
